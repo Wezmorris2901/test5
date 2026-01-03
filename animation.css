@@ -1,0 +1,32 @@
+#text-info{
+	margin:0;
+	overflow: hidden;
+}
+#text-info span{
+    display: none;
+}
+
+#text-info span.text-in{
+	display: block;
+	animation: textIn .5s ease;
+}
+#text-info span.text-out{
+	animation: textOut .5s ease;
+}
+@keyframes textIn{
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+@keyframes textOut{
+	0%{
+		transform: translateY(0%);
+	}
+	100%{
+		transform: translateY(-100%);
+
+	}
+}
